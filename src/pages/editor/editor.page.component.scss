@@ -1,0 +1,16 @@
+:host {
+    display: flex;
+    padding: 1rem;
+    place-content: stretch space-around;
+    gap: 1rem;
+
+    mat-card {
+        flex: 1 1 0;
+    }
+
+    .viewer {
+        mat-card-content {
+            padding-top: 5rem;
+        }
+    }
+}

@@ -1,0 +1,25 @@
+<mat-card class="editor">
+    <mat-card-header>
+        <mat-card-title>
+            <h1>Editor</h1>
+        </mat-card-title>
+    </mat-card-header>
+
+    <mat-card-content>
+        <form>
+            <markdown-editor [(ngModel)]="cgu" name="cgu" />
+        </form>
+    </mat-card-content>
+</mat-card>
+
+<mat-card class="viewer">
+    <mat-card-header>
+        <mat-card-title>
+            <h1>Preview</h1>
+        </mat-card-title>
+    </mat-card-header>
+
+    <mat-card-content>
+        <markdown-viewer [rawText]="cgu" />
+    </mat-card-content>
+</mat-card>

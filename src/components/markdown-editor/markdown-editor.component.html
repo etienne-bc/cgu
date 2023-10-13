@@ -1,0 +1,89 @@
+<markdown-toolbar [attr.for]="controlId">
+    <md-bold title="Bold" aria-label="Bold">
+        <button mat-icon-button>
+            <mat-icon>format_bold</mat-icon>
+        </button>
+    </md-bold>
+
+    <md-italic title="Italic" aria-label="Italic">
+        <button mat-icon-button>
+            <mat-icon>format_italic</mat-icon>
+        </button>
+    </md-italic>
+
+    <md-header title="Header 1" aria-label="Header 1" level="1">
+        <button mat-icon-button>
+            <mat-icon>format_h1</mat-icon>
+        </button>
+    </md-header>
+
+    <md-header title="Header 2" aria-label="Header 2" level="2">
+        <button mat-icon-button>
+            <mat-icon>format_h2</mat-icon>
+        </button>
+    </md-header>
+
+    <md-header title="Header 3" aria-label="Header 3" level="3">
+        <button mat-icon-button>
+            <mat-icon>format_h3</mat-icon>
+        </button>
+    </md-header>
+
+    <md-header title="Header 4" aria-label="Header 4" level="4">
+        <button mat-icon-button>
+            <mat-icon>format_h4</mat-icon>
+        </button>
+    </md-header>
+
+    <md-header title="Header 5" aria-label="Header 5" level="5">
+        <button mat-icon-button>
+            <mat-icon>format_h5</mat-icon>
+        </button>
+    </md-header>
+
+    <md-header title="Header 6" aria-label="Header 6" level="6">
+        <button mat-icon-button>
+            <mat-icon>format_h6</mat-icon>
+        </button>
+    </md-header>
+
+    <md-quote title="Quote" aria-label="Quote">
+        <button mat-icon-button>
+            <mat-icon>format_quote</mat-icon>
+        </button>
+    </md-quote>
+
+    <md-link title="Link" aria-label="Link">
+        <button mat-icon-button>
+            <mat-icon>link</mat-icon>
+        </button>
+    </md-link>
+
+    <md-image title="Image" aria-label="Image">
+        <button mat-icon-button>
+            <mat-icon>image</mat-icon>
+        </button>
+    </md-image>
+
+    <md-unordered-list title="Unordered List" aria-label="Unordered List">
+        <button mat-icon-button>
+            <mat-icon>format_list_bulleted</mat-icon>
+        </button>
+    </md-unordered-list>
+
+    <md-ordered-list title="Ordered List" aria-label="Ordered List">
+        <button mat-icon-button>
+            <mat-icon>format_list_numbered</mat-icon>
+        </button>
+    </md-ordered-list>
+</markdown-toolbar>
+
+<textarea
+    [id]="controlId"
+    class="text-editor"
+    [ngModel]="value"
+    (ngModelChange)="onChange($event)"
+    (focus)="setTouched()"
+    cdkTextareaAutosize
+    [cdkAutosizeMinRows]="6"
+></textarea>
